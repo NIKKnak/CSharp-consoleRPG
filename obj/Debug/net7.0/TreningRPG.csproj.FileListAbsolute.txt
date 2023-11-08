@@ -1,0 +1,14 @@
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\bin\Debug\net7.0\TreningRPG.exe
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\bin\Debug\net7.0\TreningRPG.deps.json
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\bin\Debug\net7.0\TreningRPG.runtimeconfig.json
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\bin\Debug\net7.0\TreningRPG.dll
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\bin\Debug\net7.0\TreningRPG.pdb
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.AssemblyInfoInputs.cache
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.AssemblyInfo.cs
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.csproj.CoreCompileInputs.cache
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.dll
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\refint\TreningRPG.dll
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.pdb
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.genruntimeconfig.cache
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\ref\TreningRPG.dll
