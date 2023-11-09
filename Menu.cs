@@ -28,6 +28,7 @@ namespace TreningRPG
                     break;
                 case 2:
                     Console.WriteLine("Bye");
+                    Environment.Exit(0); // исправить и сделать новую игру
                     break;
             }
 

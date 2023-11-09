@@ -9,10 +9,6 @@ namespace TreningRPG.Classes
 {
     internal class Assasin : MainClass
     {
-        internal int armor = 10;
-        internal int damage = 30;
-
-
 
         internal void PrintCharacter()
         {

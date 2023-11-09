@@ -10,12 +10,15 @@ namespace TreningRPG
             greetings.GreetingsText("sdfsdfdsfds");
 
             Console.WriteLine();
-
+            
+                
             Menu menu = new Menu();
             menu.MenuText();
 
             SelectClass selectClass = new SelectClass();
             selectClass.EnterClass();
+
+            
 
         }
     }
