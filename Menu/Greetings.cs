@@ -20,8 +20,12 @@ namespace TreningRPG
                 Console.Write(item);
                 Thread.Sleep(50);
             }
-
-
         }
+        internal void GreetingHero() => Console.WriteLine("Welcome hero!!");
+
+
+
+
+
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 using TreningRPG.Classes;
-
+using TreningRPG.VisualInterface;
 
 namespace TreningRPG
 {
@@ -13,8 +13,7 @@ namespace TreningRPG
     {
         
         internal void EnterClass()
-        {
-           
+        {      
             Console.WriteLine("Enter name");
 
             string name = Console.ReadLine();
@@ -22,11 +21,17 @@ namespace TreningRPG
 
             Console.WriteLine("Select class\n1: Warior\t2: Assasin");
 
-
             int selectClass = Convert.ToInt32(Console.ReadLine());
 
             Random random = new Random();
+            Greetings greetings = new Greetings();
+            HeroPanel heroPanel = new HeroPanel();
 
+            Console.Clear();
+            greetings.GreetingHero();
+            Console.WriteLine();
+            heroPanel.UpPanel();
+            
             switch (selectClass)
             {
                 case 1:

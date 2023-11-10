@@ -1,4 +1,5 @@
-﻿using TreningRPG.Classes;
+﻿using System.Threading.Channels;
+using TreningRPG.Classes;
 
 namespace TreningRPG
 {
@@ -6,6 +7,8 @@ namespace TreningRPG
     {
         static void Main(string[] args)
         {
+
+
             Greetings greetings = new Greetings();
             greetings.GreetingsText("sdfsdfdsfds");
 
@@ -17,9 +20,11 @@ namespace TreningRPG
 
             SelectClass selectClass = new SelectClass();
             selectClass.EnterClass();
+            SkeletonVarior skeletonVarior = new SkeletonVarior();
 
             
 
         }
+        
     }
 }

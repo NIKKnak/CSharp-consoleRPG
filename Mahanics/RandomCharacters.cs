@@ -9,7 +9,7 @@ namespace TreningRPG
 {
     internal class RandomCharacters
     {
-
+        
 
 
     }
