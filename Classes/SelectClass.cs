@@ -12,8 +12,8 @@ namespace TreningRPG
     internal class SelectClass
     {
         
-        internal void EnterClass()
-        {      
+        internal object EnterClass()
+        {       
             Console.WriteLine("Enter name");
 
             string name = Console.ReadLine();
@@ -30,26 +30,18 @@ namespace TreningRPG
             Console.Clear();
             greetings.GreetingHero();
             Console.WriteLine();
-            heroPanel.UpPanel();
+            //heroPanel.UpPanel();
             
             switch (selectClass)
             {
                 case 1:
-                    Warior warior = new Warior();
-                    warior.name = name;
-                    warior.classRPG = "Warior";
-                    warior.damage = random.Next(15,25);
-                    warior.armor = random.Next(25,35);
-                    warior.PrintCharacter();
-                    break;
+                    Warior warior = new Warior(name, "Warior", random.Next(25, 35), random.Next(15, 25),150);
+                    return warior;
+
                 case 2:
-                    Assasin assasin = new Assasin();
-                    assasin.name = name;
-                    assasin.classRPG = "Assasin";
-                    assasin.damage = random.Next(25,35);
-                    assasin.armor = random.Next(15, 20);
-                    assasin.PrintCharacter();
-                    break;
+                    Assasin assasin = new Assasin(name, "Assasin", random.Next(25, 35), random.Next(15, 20), 100);
+                    return assasin;
+                default: return null;
 
             }
 

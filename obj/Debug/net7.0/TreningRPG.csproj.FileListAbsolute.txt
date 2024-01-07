@@ -12,3 +12,4 @@ C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\refint\TreningRPG
 C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.pdb
 C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.genruntimeconfig.cache
 C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\ref\TreningRPG.dll
+C:\Users\nik88\OneDrive\Desktop\C#\TreningRPG\obj\Debug\net7.0\TreningRPG.sourcelink.json

@@ -9,7 +9,7 @@ namespace TreningRPG
 {
     internal class RandomName
     {
-        public static List<string> rndName = new List<string>() { "Nik", "Jack", "Rik", "Morty", "Frank", "Lui", "Bob" };
+        public static List<string> rndName = new List<string>() { "Skeleton Nik", "Skeleton Jack", "Skeleton Rik", "Skeleton Morty", "Skeleton Frank", "Skeleton Lui", "Skeleton Bob" };
         public static string GetName()
         {
 

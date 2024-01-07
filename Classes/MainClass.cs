@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TreningRPG.Mahanics;
+using TreningRPG.VisualInterface;
 
 namespace TreningRPG
 {
@@ -12,20 +14,51 @@ namespace TreningRPG
         internal string classRPG { get; set; }
         internal int armor { get; set; }
         internal int damage { get; set; }
+        internal int health { get; set; }
 
-        internal MainClass()
+        internal MainClass(string Name, string ClassRPG, int Armor, int Damage, int Health)
         {
-            string Name = name;
-            string ClassRPG = classRPG;
-            int Armor = armor;
-            int Damage = damage;
+
+            this.name = Name;
+            this.classRPG = ClassRPG;
+            this.armor = Armor;
+            this.damage = Damage;
+            this.health = Health;
         }
 
         internal void PrintCharacter()
         {
-            Console.WriteLine($"Name: {name} Class: {classRPG} Armor: {armor} Damage: {damage}");
-        }
+            Console.Write("Name: ");
+            Console.ForegroundColor = ConsoleColor.Magenta; 
+            Console.Write(name);
+            Console.ResetColor(); 
 
+            Console.Write(" Class: ");
+            Console.ForegroundColor = ConsoleColor.Cyan; 
+            Console.Write(classRPG);
+            Console.ResetColor(); 
+
+            Console.Write(" Armor: ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write(armor);
+            Console.ResetColor(); 
+
+            Console.Write(" Damage: ");
+            Console.ForegroundColor = ConsoleColor.DarkRed; 
+            Console.Write(damage);
+            Console.ResetColor(); 
+
+            Console.Write(" Health: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(health);
+            Console.ResetColor(); 
+
+            Console.WriteLine();
+
+            //Console.WriteLine($"Name: {name} Class: {classRPG} Armor: {armor} Damage: {damage} Health: {health}");
+            Console.WriteLine("-----------------------------------------------------------");
+            Console.WriteLine();
+        }
 
 
     }
