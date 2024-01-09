@@ -25,12 +25,11 @@ namespace TreningRPG
 
             Random random = new Random();
             Greetings greetings = new Greetings();
-            HeroPanel heroPanel = new HeroPanel();
 
             Console.Clear();
             greetings.GreetingHero();
             Console.WriteLine();
-            //heroPanel.UpPanel();
+
             
             switch (selectClass)
             {

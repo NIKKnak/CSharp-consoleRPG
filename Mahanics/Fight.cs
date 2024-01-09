@@ -46,7 +46,7 @@ namespace TreningRPG
                     hero.armor -= 30;
                 }
 
-
+                Console.Clear();
 
                 hero.PrintCharacter();
                 enemy.PrintCharacter();

@@ -28,6 +28,9 @@ namespace TreningRPG
 
         internal void PrintCharacter()
         {
+            //HeroPanel heroPanel = new HeroPanel();
+            //heroPanel.UpPanel();
+
             Console.Write("Name: ");
             Console.ForegroundColor = ConsoleColor.Magenta; 
             Console.Write(name);
@@ -55,7 +58,6 @@ namespace TreningRPG
 
             Console.WriteLine();
 
-            //Console.WriteLine($"Name: {name} Class: {classRPG} Armor: {armor} Damage: {damage} Health: {health}");
             Console.WriteLine("-----------------------------------------------------------");
             Console.WriteLine();
         }
