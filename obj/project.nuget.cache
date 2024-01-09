@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ieTbKtulvAwzwuauxMORyPqe0+rBghMnjYxDsnTOACL8y144xc7mHPGGMS8PxLNr3BWbTjue9t/aLtC9OlTYwA==",
+  "dgSpecHash": "vQAhK6dIuY4CYWeHgr0sS0ng2WyT+JuNxDIBdc7MnyAhU8sbO9QPJ2ZUdin2V0dfaqfaNFIQaoPCrHFbA7Tk1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nik88\\OneDrive\\Desktop\\C#\\TreningRPG\\TreningRPG.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Users\\nik88\\OneDrive\\Desktop\\C#\\TreningRPG\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

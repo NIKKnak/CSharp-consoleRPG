@@ -26,8 +26,10 @@ namespace TreningRPG
             this.health = Health;
         }
 
-        internal void PrintCharacter()
+        internal  void PrintCharacter()
         {
+            
+
             Console.Write("Name: ");
             Console.ForegroundColor = ConsoleColor.Magenta; 
             Console.Write(name);
@@ -55,7 +57,6 @@ namespace TreningRPG
 
             Console.WriteLine();
 
-            //Console.WriteLine($"Name: {name} Class: {classRPG} Armor: {armor} Damage: {damage} Health: {health}");
             Console.WriteLine("-----------------------------------------------------------");
             Console.WriteLine();
         }

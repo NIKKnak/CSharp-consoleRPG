@@ -5,14 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using TreningRPG.Classes;
 using TreningRPG.Mahanics;
+using TreningRPG.VisualInterface;
 
 namespace TreningRPG
 {
     internal class Fight
     {
 
+
         internal void StartBattle(MainClass hero, MainClass enemy)
         {
+
+
+            EnemyPanel enemyPanel = new EnemyPanel();
+            
+            HeroPanel heroPanel = new HeroPanel();
+            
+
             DamageHero damageHero = new DamageHero();
             Console.WriteLine($"Hero Health: {hero.health}, Enemy Health: {enemy.health}");
             while (hero.health > 0 && enemy.health > 0)
@@ -27,7 +36,7 @@ namespace TreningRPG
                 {
 
                     enemy.health = damageHero.Damage(hero.damage, enemy.armor, enemy.health);
-                    Console.WriteLine($"{hero.name} нанес урон {enemy.name}.");
+                    
 
                 }
                 else if (select == 2)
@@ -39,17 +48,20 @@ namespace TreningRPG
                 if (enemy.health <= 0) break;
 
                 hero.health = damageHero.Damage(enemy.damage, hero.armor, hero.health);
-                Console.WriteLine($"{enemy.name} нанес урон {hero.name}.");
+                
 
                 if (select == 2)
                 {
                     hero.armor -= 30;
                 }
 
+                Console.Clear();
 
-
+                heroPanel.UpPanel();
                 hero.PrintCharacter();
+                enemyPanel.UpPanel();
                 enemy.PrintCharacter();
+
 
             }
 

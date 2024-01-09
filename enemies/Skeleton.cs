@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
+using TreningRPG.VisualInterface;
 
 namespace TreningRPG
 {
@@ -13,17 +14,16 @@ namespace TreningRPG
         
 
 
-        private string name { get; init; }
-        internal string classRPG { get; init; }
+        internal string name { get; set; }
+        internal string classRPG { get; set; }
         internal int armor { get; set; } 
         internal int damage { get; set; } 
         internal int health { get; set; }
 
-        internal SkeletonVarior(string Name = "Skeleton" , string ClassRPG = "Skeleton varior", int Armor = 10, int Damage = 10, int Health = 50) : base("",  ClassRPG,  Armor,  Damage,  Health)
+        internal SkeletonVarior(string Name = "Skeleton", string ClassRPG = "Skeleton varior", int Armor = 10, int Damage = 10, int Health = 50) : base(Name,  ClassRPG,  Armor,  Damage,  Health)
         {
-            RandomName randomName = new RandomName();
-            
-            this.name = randomName.GetName();
+
+            this.name = Name;
             this.classRPG = ClassRPG;
             this.armor = Armor;
             this.damage = Damage;
@@ -33,7 +33,7 @@ namespace TreningRPG
         }
 
         
-        internal void PrintCharacter()
+        internal  void PrintCharacter()
         {
             
 
