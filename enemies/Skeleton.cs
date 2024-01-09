@@ -10,18 +10,20 @@ namespace TreningRPG
 {
     internal class SkeletonVarior : MainClass
     {
-        RandomName randomName = new RandomName();
+        
 
 
-        private string name { get; init; } = RandomName.GetName();
+        private string name { get; init; }
         internal string classRPG { get; init; }
         internal int armor { get; set; } 
         internal int damage { get; set; } 
         internal int health { get; set; }
 
-        internal SkeletonVarior(string Name = "Skeleton" , string ClassRPG = "Skeleton varior", int Armor = 10, int Damage = 10, int Health = 50) : base( Name ?? RandomName.GetName(),  ClassRPG,  Armor,  Damage,  Health)
+        internal SkeletonVarior(string Name = "Skeleton" , string ClassRPG = "Skeleton varior", int Armor = 10, int Damage = 10, int Health = 50) : base("",  ClassRPG,  Armor,  Damage,  Health)
         {
-            this.name = Name;
+            RandomName randomName = new RandomName();
+            
+            this.name = randomName.GetName();
             this.classRPG = ClassRPG;
             this.armor = Armor;
             this.damage = Damage;
@@ -33,8 +35,8 @@ namespace TreningRPG
         
         internal void PrintCharacter()
         {
-           
-            //Console.WriteLine($"Name: {name} Class: {classRPG} Armor: {armor} Damage: {damage} Health: {health}");
+            
+
             Console.Write("Name: ");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write(name);

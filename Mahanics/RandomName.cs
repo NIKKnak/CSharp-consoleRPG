@@ -9,15 +9,17 @@ namespace TreningRPG
 {
     internal class RandomName
     {
-        public static List<string> rndName = new List<string>() { "Skeleton Nik", "Skeleton Jack", "Skeleton Rik", "Skeleton Morty", "Skeleton Frank", "Skeleton Lui", "Skeleton Bob" };
-        public static string GetName()
+        public string[] rndName = { "Skeleton Nik", "Skeleton Jack", "Skeleton Rik", "Skeleton Morty", "Skeleton Frank", "Skeleton Lui", "Skeleton Bob" };
+        public string GetName()
         {
 
             Random rnd = new Random();
-            int index = rnd.Next(rndName.Count);
-            return rndName[index];
+            int index = rnd.Next(rndName.Length);
+            string name = rndName[index];
+            return name;
         }
     }
+
 }
 
 
