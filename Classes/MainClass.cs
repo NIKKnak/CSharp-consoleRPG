@@ -28,8 +28,6 @@ namespace TreningRPG
 
         internal  void PrintCharacter()
         {
-            
-
             Console.Write("Name: ");
             Console.ForegroundColor = ConsoleColor.Magenta; 
             Console.Write(name);
